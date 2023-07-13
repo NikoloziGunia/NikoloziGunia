@@ -2,8 +2,7 @@
 
 ## I'm a Unity Developer!!
 
-- 💻 Currently Learning Everything 😄
-- 👯 Looking To Collaborate With Other Developers.
+- 💻I am a Unity Developer and enthusiast.
 
 ### Connect with me:
 ✉️ nikolozigunia@gmail.com
