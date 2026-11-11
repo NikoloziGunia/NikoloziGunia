@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "landingTitle": "Tipper — card tips for small cafés and shops",
+    "landingDescription": "Tipper lets guests tip small coffee shops and neighbourhood shops by card. Scan a QR code or tap NFC, pay with Apple Pay or Google Pay, and the tips reach your bank account at the end of the day.",
+    "tipTitle": "Tip {company} — Tipper"
+  },
+  "brand": "Tipper",
+  "nav": {
+    "problem": "The problem",
+    "how": "How it works",
+    "why": "Why Tipper",
+    "about": "About us",
+    "partners": "Partners",
+    "contact": "Contact",
+    "cta": "Become a partner",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Digital tips for small businesses",
+    "title": "Tips by card, for the places that never had them.",
+    "text": "Tipper helps small coffee shops and neighbourhood shops get tipped by card. No terminal, no app, no setup. Guests scan a code or tap a tag, and the day's tips reach your bank account at the end of the day.",
+    "primary": "Become a partner",
+    "secondary": "See how it works",
+    "cardGreeting": "Hi, have a good day!",
+    "cardThanks": "Thank you for your tip",
+    "cardPlace": "Your café name",
+    "cardAmount": "Tip amount"
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "Fewer people carry cash. Fewer people can tip.",
+    "text": "Restaurants can add a tip to the card payment. Small coffee shops, bakeries, kiosks and corner shops usually can't, because they have no waiter, no tip option on the terminal, and no easy way to take one. So guests who would happily say thank you simply can't, and the people who made their morning go home with less.",
+    "points": [
+      {
+        "title": "Guests want to tip",
+        "text": "A good coffee deserves a thank-you, but nobody has coins in their pocket any more."
+      },
+      {
+        "title": "Card terminals don't help",
+        "text": "Most small places have a terminal built for the exact bill, with no way to add a tip."
+      },
+      {
+        "title": "Staff lose out",
+        "text": "Tips that used to arrive in a jar are quietly disappearing."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Tipper fixes that — fully digital.",
+    "text": "No hardware to buy, no app to install, no new terminal. Just a small sticker or tag by your till."
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From “thank you” to your bank account, in four steps.",
+    "steps": [
+      {
+        "title": "Put up your Tipper code",
+        "text": "We give you a QR sticker and an NFC tag with your own unique link. Stick them by the till, on the counter or on the cup sleeve."
+      },
+      {
+        "title": "The guest scans or taps",
+        "text": "They point their phone camera at the QR code, or just tap the NFC tag. Your tip page opens instantly, with no app to download."
+      },
+      {
+        "title": "They pay in two taps",
+        "text": "They choose an amount and pay with Apple Pay or Google Pay. No card numbers to type."
+      },
+      {
+        "title": "You get paid at the end of the day",
+        "text": "All of the day's tips are transferred to your bank account, with a clear record of every tip."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Tipper",
+    "title": "Built for small places, not for big restaurants.",
+    "items": [
+      {
+        "title": "Easy access",
+        "text": "QR code and NFC: any modern phone can use it in seconds, with no account and no app."
+      },
+      {
+        "title": "Nothing to install",
+        "text": "No terminal, no cables, no software. A sticker is all it takes."
+      },
+      {
+        "title": "Secure payments",
+        "text": "Guests pay with Apple Pay or Google Pay, so card details are never typed in or stored by you."
+      },
+      {
+        "title": "Paid every day",
+        "text": "The day's tips go to your account at the end of the day, so there is nothing to collect or count."
+      },
+      {
+        "title": "Simple and fair",
+        "text": "We keep only a small share of each tip to run the service. The rest is yours."
+      },
+      {
+        "title": "Fully digital",
+        "text": "No cash jars and no counting coins. Every tip is recorded and accounted for."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Who we are",
+    "text": "We are a small local team that believes good service deserves a thank-you, even when there is no cash in the wallet. Tipper started with a simple question: why can you tip a waiter by card, but not the person who makes your morning coffee? We built the answer, and we help small places everywhere get it set up."
+  },
+  "partners": {
+    "eyebrow": "Partners",
+    "title": "Places already using Tipper",
+    "label": "Our partners"
+  },
+  "contact": {
+    "title": "Want Tipper at your place?",
+    "text": "Write to us and we'll get you set up with your own QR code and NFC tag.",
+    "email": "Email us",
+    "phone": "Call us"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Card tips for small places."
+  },
+  "tip": {
+    "greeting": "Hi, have a good day!",
+    "thanks": "Thank you for your tip",
+    "for": "Your tip goes to the team at",
+    "amountLabel": "Choose an amount",
+    "custom": "Other amount",
+    "customPlaceholder": "0.00",
+    "payWith": "Pay with",
+    "applePay": "Apple Pay",
+    "googlePay": "Google Pay",
+    "secure": "Payments are processed securely. Your card details never reach us or the business.",
+    "demoBanner": "Demo mode — no real money is charged.",
+    "invalidAmount": "Please enter an amount between {min} and {max} ₾.",
+    "failed": "The payment did not go through. Please try again.",
+    "processing": "Processing…",
+    "successTitle": "Thank you!",
+    "successText": "Your tip of {amount} ₾ is on its way to {company}. Have a lovely day!",
+    "again": "Leave another tip",
+    "notFoundTitle": "This tip page isn't available",
+    "notFoundText": "The link may be wrong or the place is no longer active. Please check the QR code or ask the staff."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "We couldn't find the page you were looking for.",
+    "home": "Back to the home page"
+  },
+  "print": {
+    "title": "Leave a tip",
+    "scan": "Scan with your phone camera",
+    "tap": "or tap your phone on the NFC tag",
+    "pay": "Pay with Apple Pay or Google Pay",
+    "thanks": "Thank you!"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "tipper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Card tipping for small cafes and shops — scan a QR code or tap NFC, pay with Apple Pay / Google Pay.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node src/start.js",
+    "start:public": "node src/public-server.js",
+    "start:admin": "node src/admin-server.js",
+    "create-admin": "node scripts/create-admin.js",
+    "seed": "node scripts/seed-demo.js",
+    "test": "node --test --no-warnings test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "qrcode": "^1.5.4"
+  }
+}

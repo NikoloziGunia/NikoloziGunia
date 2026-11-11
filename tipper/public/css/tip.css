@@ -1,0 +1,69 @@
+:root {
+  --bg: #fbf7f0;
+  --surface: #ffffff;
+  --ink: #2a1a10;
+  --muted: #6b5848;
+  --line: #eadfd1;
+  --accent: #b8501a;
+  --accent-soft: #f8e5d4;
+  --dark: #2a1a10;
+  --font: "Inter", "Noto Sans Georgian", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); color: var(--ink); line-height: 1.5; background: linear-gradient(180deg, #fff7ec 0%, #fbe9d6 100%) fixed; min-height: 100vh; min-height: 100dvh; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+
+.tip { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px 18px 84px; }
+.demo-banner { position: fixed; top: 0; left: 0; right: 0; background: #7a2e0a; color: #fff; text-align: center; font-size: .82rem; font-weight: 600; padding: 6px 12px; z-index: 5; }
+.tip-card { width: 100%; max-width: 430px; background: var(--surface); border-radius: 28px; padding: 30px 24px 24px; box-shadow: 0 2px 4px rgba(42, 26, 16, .05), 0 24px 60px rgba(42, 26, 16, .14); }
+.center-text { text-align: center; }
+.tip-hi { margin: 0 0 4px; font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+.tip-thanks { margin: 0 0 10px; font-size: clamp(1.6rem, 6vw, 2rem); line-height: 1.15; letter-spacing: -.02em; font-weight: 800; }
+.tip-for { margin: 0 0 24px; color: var(--muted); }
+.tip-for strong { color: var(--ink); font-weight: 700; }
+.tip-label { margin: 0 0 10px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
+
+.amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+.amt { appearance: none; border: 2px solid var(--line); background: #fff; color: var(--ink); font: inherit; font-weight: 800; font-size: 1.05rem; padding: 14px 0; border-radius: 16px; cursor: pointer; transition: border-color .12s, background .12s, transform .1s; min-height: 52px; }
+.amt:active { transform: scale(.97); }
+.amt.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+
+.custom { display: block; margin-bottom: 8px; }
+.custom > span:first-child { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+.custom-input { position: relative; display: block; }
+.custom-input input { width: 100%; font: inherit; font-size: 1.1rem; font-weight: 700; padding: 14px 40px 14px 16px; border: 2px solid var(--line); border-radius: 16px; background: #fff; color: var(--ink); min-height: 52px; }
+.custom-input input:focus { outline: none; border-color: var(--accent); }
+.custom-input b { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.tip-error { margin: 8px 0 0; color: #b3261e; font-size: .9rem; font-weight: 600; }
+.tip-error[hidden], [hidden] { display: none !important; }
+
+.pay { display: grid; gap: 10px; margin: 0 0 16px; }
+.pay-btn { appearance: none; display: flex; align-items: center; justify-content: center; gap: 4px; width: 100%; min-height: 54px; border-radius: 14px; font: inherit; font-weight: 700; font-size: 1.15rem; cursor: pointer; border: 1px solid transparent; transition: opacity .15s, transform .1s; }
+.pay-btn:active { transform: scale(.985); }
+.pay-btn svg { width: 22px; height: 22px; flex: none; }
+.pay-btn[disabled] { opacity: .45; cursor: not-allowed; }
+.pay-btn.apple { background: #000; color: #fff; }
+.pay-btn.google { background: #fff; color: #3c4043; border-color: #dadce0; }
+.tip-secure { margin: 0; font-size: .78rem; color: var(--muted); text-align: center; }
+
+.tip-done { text-align: center; padding: 36px 24px; }
+.tip-done h1 { margin: 10px 0 8px; font-size: 1.9rem; font-weight: 800; letter-spacing: -.02em; }
+.tip-done p { color: var(--muted); margin: 0 0 20px; }
+.done-check { width: 72px; height: 72px; margin: 0 auto; border-radius: 50%; display: grid; place-items: center; background: #e5f4e8; color: #1b7a34; animation: pop .35s ease-out; }
+.done-check svg { width: 38px; height: 38px; }
+.again { appearance: none; border: 2px solid var(--line); background: #fff; font: inherit; font-weight: 700; padding: 12px 22px; border-radius: 999px; cursor: pointer; }
+.again:hover { border-color: var(--ink); }
+@keyframes pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* "Tipper" — bottom-left corner */
+.tip-brand { position: fixed; left: 16px; bottom: calc(14px + env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.05rem; letter-spacing: -.02em; text-decoration: none; color: var(--ink); }
+.brand-mark { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--dark); color: #fff; }
+.brand-mark svg { width: 17px; height: 17px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: .8em 1.4em; border-radius: 999px; font-weight: 700; text-decoration: none; }
+.btn-primary { background: var(--accent); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@media (max-width: 360px) { .amounts { grid-template-columns: repeat(2, 1fr); } }
