@@ -17,9 +17,8 @@ const ICONS = {
   google: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.600 12.200c0-.7-.1-1.400-.2-2H12v3.800h5.400a4.600 4.600 0 0 1-2 3v2.500h3.200c1.900-1.700 3-4.300 3-7.300z"/><path fill="#34A853" d="M12 22c2.700 0 5-.9 6.600-2.400l-3.200-2.500c-.9.600-2 1-3.400 1-2.600 0-4.800-1.800-5.600-4.100H3.100v2.600A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.400 14c-.2-.6-.3-1.300-.3-2s.1-1.400.3-2V7.400H3.100a10 10 0 0 0 0 9.200z"/><path fill="#EA4335" d="M12 5.900c1.500 0 2.800.5 3.800 1.500l2.900-2.900A10 10 0 0 0 3.100 7.400L6.400 10c.8-2.300 3-4.100 5.600-4.100z"/></svg>',
 };
 
-const WHY_ICONS = ['access', 'box', 'shield', 'calendar', 'heart', 'spark'];
+const DIFF_ICONS = ['tap', 'heart', 'bank'];
 const STEP_ICONS = ['qr', 'tap', 'pay', 'bank'];
-const PROBLEM_ICONS = ['heart', 'pay', 'box'];
 
 function page({ lang, langs, t, title, description, body, css = [], js = [], bodyClass = '', robots = '' }) {
   return `<!doctype html>
@@ -92,10 +91,8 @@ function landing({ lang, langs, t, config, partners }) {
   <div class="wrap bar">
     ${brandMark()}
     <nav id="nav" class="nav" aria-label="Main">
-      <a href="#problem">${esc(t('nav.problem'))}</a>
+      <a href="#difference">${esc(t('nav.difference'))}</a>
       <a href="#how">${esc(t('nav.how'))}</a>
-      <a href="#why">${esc(t('nav.why'))}</a>
-      <a href="#about">${esc(t('nav.about'))}</a>
       ${partners.length ? `<a href="#partners">${esc(t('nav.partners'))}</a>` : ''}
       <a href="#contact">${esc(t('nav.contact'))}</a>
     </nav>
@@ -111,7 +108,6 @@ function landing({ lang, langs, t, config, partners }) {
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">${esc(t('hero.eyebrow'))}</p>
       <h1>${esc(t('hero.title'))}</h1>
       <p class="lead">${esc(t('hero.text'))}</p>
       <div class="actions">
@@ -138,21 +134,20 @@ function landing({ lang, langs, t, config, partners }) {
   </div>
 </section>
 
-<section class="section problem" id="problem">
-  <div class="wrap">
-    <p class="eyebrow">${esc(t('problem.eyebrow'))}</p>
-    <h2>${esc(t('problem.title'))}</h2>
-    <p class="lead narrow">${esc(t('problem.text'))}</p>
-    <div class="cards three">
-      ${t('problem.points').map((p, i) => `<article class="card"><span class="icon">${ICONS[PROBLEM_ICONS[i % PROBLEM_ICONS.length]]}</span><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></article>`).join('')}
-    </div>
+<section class="solution" id="story">
+  <div class="wrap center">
+    <h2>${esc(t('story.title'))}</h2>
+    <p class="lead">${esc(t('story.text'))}</p>
+    <p class="lead strong-line">${esc(t('story.points'))}</p>
   </div>
 </section>
 
-<section class="solution">
-  <div class="wrap center">
-    <h2>${esc(t('solution.title'))}</h2>
-    <p class="lead">${esc(t('solution.text'))}</p>
+<section class="section difference" id="difference">
+  <div class="wrap">
+    <h2>${esc(t('difference.title'))}</h2>
+    <div class="cards three">
+      ${t('difference.items').map((s, i) => `<article class="card"><span class="icon">${ICONS[DIFF_ICONS[i % DIFF_ICONS.length]]}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></article>`).join('')}
+    </div>
   </div>
 </section>
 
@@ -166,21 +161,11 @@ function landing({ lang, langs, t, config, partners }) {
   </div>
 </section>
 
-<section class="section why" id="why">
-  <div class="wrap">
-    <p class="eyebrow">${esc(t('why.eyebrow'))}</p>
-    <h2>${esc(t('why.title'))}</h2>
-    <div class="cards three">
-      ${t('why.items').map((s, i) => `<article class="card"><span class="icon">${ICONS[WHY_ICONS[i % WHY_ICONS.length]]}</span><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></article>`).join('')}
-    </div>
-  </div>
-</section>
-
-<section class="section about" id="about">
-  <div class="wrap narrow-wrap">
-    <p class="eyebrow">${esc(t('about.eyebrow'))}</p>
-    <h2>${esc(t('about.title'))}</h2>
-    <p class="lead">${esc(t('about.text'))}</p>
+<section class="closing" id="about">
+  <div class="wrap center">
+    <h2>${esc(t('closing.title'))}</h2>
+    <p class="lead">${esc(t('closing.text'))}</p>
+    <p class="closing-strong">${esc(t('closing.strong'))}</p>
   </div>
 </section>
 

@@ -172,3 +172,12 @@ p { margin: 0 0 1em; }
   .actions .btn { flex: 1 1 100%; }
   .card, .step { padding: 22px; }
 }
+
+/* story + closing statements */
+.solution .strong-line { color: #fff; font-weight: 600; margin-top: 1.2rem; }
+.solution h2 { max-width: 24ch; }
+.difference { background: var(--bg); }
+.closing { background: var(--accent-soft); padding: clamp(64px, 8vw, 110px) 0; }
+.closing h2 { max-width: 22ch; margin-inline: auto; }
+.closing .lead { margin-inline: auto; }
+.closing-strong { font-size: clamp(1.3rem, 2.6vw, 1.8rem); font-weight: 800; color: var(--accent); margin: .6rem 0 0; letter-spacing: -.01em; }
